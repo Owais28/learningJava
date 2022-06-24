@@ -14,6 +14,7 @@
 This is a very simple java program that prints a message to console. This program consist of a [class]() `SimpleJavaProgram`,
 a [variable]() `greetings` of type [String]() and a [method]() `main`.
 ```java
+// SimpleJavaProgram.java
 public class SimpleJavaProgram {
     public static void main(String[] args) {
         String greetings = "Hello World";  // variable
@@ -116,3 +117,21 @@ binary representation of the fraction 1/10, just as there is no accurate
 representation of the fraction 1/3 in the decimal system. If you need precise
 numerical computations without roundoff errors, use the BigDecimal class,
 which is introduced later in this chapter
+
+
+### 1.3.3 The `char` Type
+The char type was originally intended to describe individual characters.
+However, this is no longer the case. Nowadays, some Unicode characters can
+be described with one char value, and other Unicode characters require two
+char values.
+
+Literal values of type char are enclosed in single quotes. For example, 'A' is
+a character constant with value 65.
+
+Escape Sequences for Special Characters
+
+![img.png](img.png)
+
+### 1.3.5 The boolean Type
+The boolean type has two values, false and true. It is used for evaluating
+logical conditions. You cannot convert between integers and boolean values.
