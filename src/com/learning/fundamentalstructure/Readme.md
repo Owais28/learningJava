@@ -1,7 +1,7 @@
 # Chapter 1 - Fundamental Structure of Java  
 1. [A Simple Java Program](#11-a-simple-java-program)
-2. Comments
-3. Data Types
+2. [Comments](#12-comments)
+3. [Data Types](#13-data-types)
 4. Variables and Constants
 5. Operators
 6. Strings
