@@ -11,6 +11,7 @@
 10. Arrays
 ---
 ## 1.1 A simple Java Program
+This is a very simple java program having one [variable]() `greetings` of type [String]().
 ```java
 public class SimpleJavaProgram {
     public static void main(String[] args) {
@@ -18,4 +19,6 @@ public class SimpleJavaProgram {
         System.out.println(greetings); // printing on console
     }
 }
+// Hello World
 ```
+❓ What this program is actually doing?
