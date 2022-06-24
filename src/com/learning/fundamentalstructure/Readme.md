@@ -74,10 +74,10 @@ a declared type. There are **eight** **[primitive types]()** in Java. Four of th
 **[integer](#131-integer-types)** types; two are **[floating-point]()** number types; one is the **[character]()** type
 `char`, used for code units in the Unicode encoding scheme  and one is a [boolean]() type for truth values.
 
-### 1.3.1 Integer Types
-The integer types are for numbers without fractional parts. 
+### 1.3.1 `Integer` Types
+The `integer` types are for numbers without fractional parts. 
 - Negative values are allowed. 
-- Java provides the four integer types shown in the following table :
+- Java provides the four `integer` types shown in the following table :
 
 |Type|Storage Requirement|Range|
 | --- | --- |---|
@@ -85,7 +85,7 @@ The integer types are for numbers without fractional parts.
 |`short`|2 bytes|-32,768 to 32,677 |
 |`long`|8 bytes|-9,233,372,036,854,775,808 to 9,233,372,036,854,775,807 |
 |`byte`|1 byte|-128 to 127|
-- Long integer numbers have a suffix `L` or `l` (for example, `4000000000L`).
+- Long `integer` numbers have a suffix `L` or `l` (for example, `4000000000L`).
 - Hexadecimal numbers have a prefix `0x` or `0X` (for example, `0xCAFE`).
 - Octal numbers have a prefix `0` (for example, `010` is 8).
 - You can write numbers in binary, with a prefix `0b` or `0B`. For example, `0b1001`
@@ -95,7 +95,7 @@ The integer types are for numbers without fractional parts.
   human eyes only. The Java compiler simply removes them.
 
 
-> ⚠️ Under Java, the ranges of the integer types do not depend on the machine on
+> ⚠️ Under Java, the ranges of the `integer` types do not depend on the machine on
 which you will be running the Java code.
 
 ### 1.3.2 Floating-Point Types
@@ -120,12 +120,12 @@ which is introduced later in this chapter
 
 
 ### 1.3.3 The `char` Type
-The char type was originally intended to describe individual characters.
+The `char` type was originally intended to describe individual characters.
 However, this is no longer the case. Nowadays, some Unicode characters can
-be described with one char value, and other Unicode characters require two
-char values.
+be described with one `char` value, and other Unicode characters require two
+`char` values.
 
-Literal values of type char are enclosed in single quotes. For example, 'A' is
+Literal values of type `char` are enclosed in single quotes. For example, 'A' is
 a character constant with value 65.
 
 Escape Sequences for Special Characters
@@ -133,5 +133,5 @@ Escape Sequences for Special Characters
 ![img.png](img.png)
 
 ### 1.3.5 The boolean Type
-The boolean type has two values, false and true. It is used for evaluating
-logical conditions. You cannot convert between integers and boolean values.
+The `boolean` type has two values, `false` and `true`. It is used for evaluating
+logical conditions. You cannot convert between `integers` and `boolean` values.
