@@ -3,5 +3,9 @@ package com.learning;
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello World!");
+
+        int salary;
+        boolean done;
+        var name = "dddd";
     }
 }
