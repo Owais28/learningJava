@@ -1,5 +1,5 @@
 # 1. Fundamental Structure of Java
-1. [A Simple Java Program]()
+1. [A Simple Java Program](#11-a-simple-java-program)
 2. Comments
 3. Data Types
 4. Variables and Constants
