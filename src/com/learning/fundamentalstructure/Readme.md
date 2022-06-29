@@ -33,15 +33,15 @@ public class ClassName {
     }
 }
 ```
-## 1.2 Comments 
+## 1.2 Comments {: .fs-6 }
 Comments in Java, as in most programming languages, do not show up in the
 executable program. Thus, you can add as many comments as needed without
 fear of bloating the code.
-{: .fs-6 }
-Java has three ways of marking comments.
+{: .fs-5 }
+Java has three ways of marking comments. {: .fs-5 }
 ### 1.2.1 Single Line Comment `//`.
 The most common form is a `//`. Use this for a comment that runs from the `//` to the end
-of the line.
+of the line. {: .fs-5 }
 ```java
     System.out.println("We will not use 'Hello, World!'"); // is this too cute?
 ```
