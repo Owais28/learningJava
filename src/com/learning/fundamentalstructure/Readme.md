@@ -265,4 +265,4 @@ declaration, or the special value `null` that indicates that the variable is not
 to any value at all.
 
 
-<button type="button" name="button" class=".btn .btn-purple">[Link button](http://example.com/)</button>
+<button type="button" name="button" class=".btn .btn-purple"><a href="#">sdddsd</a></button>
