@@ -264,4 +264,5 @@ A variable of type `Size` can hold only one of the values listed in the type
 declaration, or the special value `null` that indicates that the variable is not set
 to any value at all.
 
-[Link button](http://example.com/){: .btn .btn-purple }
+
+<button type="button" name="button" class=".btn .btn-purple">[Link button](http://example.com/){: .btn .btn-purple }</button>
