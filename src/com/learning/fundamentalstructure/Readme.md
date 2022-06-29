@@ -3,13 +3,15 @@
 2. [Comments](#12-comments)
 3. [Data Types](#13-data-types)
 4. [Variables and Constants](#14-variables-and-constants)
-5. Operators
+5. OperatorsK
 6. Strings
 7. Input and Output
 8. Control Flow
 9. Big Numbers 
 10. Arrays
+
 ---
+
 ## 1.1 A simple Java Program
 This is a very simple java program that prints a message to console. This program consist of a [class]() `SimpleJavaProgram`,
 a [variable]() `greetings` of type [String]() and a [method]() `main`.
