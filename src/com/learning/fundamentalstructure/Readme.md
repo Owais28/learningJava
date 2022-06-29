@@ -84,12 +84,12 @@ The `integer` types are for numbers without fractional parts.
 - Negative values are allowed. 
 - Java provides the four `integer` types shown in the following table :
 
-|Type|Storage Requirement|Range|
-| :--- | :--- |:---|
-|`int`|4 bytes|-2,147,483648 to 2,147,483,647 (just over two billion)|
-|`short`|2 bytes|-32,768 to 32,677 |
-|`long`|8 bytes|-9,233,372,036,854,775,808 to 9,233,372,036,854,775,807 |
-|`byte`|1 byte|-128 to 127|
+|Type      |Storage Requirement|Range                                                    |
+|:---------|:------------------|:--------------------------------------------------------|
+|`int`     |4 bytes            |-2,147,483648 to 2,147,483,647 (just over two billion)   |
+|`short`   |2 bytes            |-32,768 to 32,677                                        |
+|`long`    |8 bytes            |-9,233,372,036,854,775,808 to 9,233,372,036,854,775,807  |
+|`byte`    |1 byte             |-128 to 127                                              |
 - Long `integer` numbers have a suffix `L` or `l` (for example, `4000000000L`).
 - Hexadecimal numbers have a prefix `0x` or `0X` (for example, `0xCAFE`).
 - Octal numbers have a prefix `0` (for example, `010` is 8).
