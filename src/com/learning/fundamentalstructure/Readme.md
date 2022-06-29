@@ -85,7 +85,7 @@ The `integer` types are for numbers without fractional parts.
 - Java provides the four `integer` types shown in the following table :
 
 |Type|Storage Requirement|Range|
-| --- | --- |---|
+| :--- | :--- |:---|
 |`int`|4 bytes|-2,147,483648 to 2,147,483,647 (just over two billion)|
 |`short`|2 bytes|-32,768 to 32,677 |
 |`long`|8 bytes|-9,233,372,036,854,775,808 to 9,233,372,036,854,775,807 |
