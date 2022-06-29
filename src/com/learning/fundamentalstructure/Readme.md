@@ -10,7 +10,7 @@
 9. Big Numbers 
 10. Arrays
 
----
+
 
 ## 1.1 A simple Java Program
 This is a very simple java program that prints a message to console. This program consist of a [class]() `SimpleJavaProgram`,
