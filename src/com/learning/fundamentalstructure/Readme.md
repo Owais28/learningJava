@@ -3,7 +3,7 @@
 2. [Comments](#12-comments)
 3. [Data Types](#13-data-types)
 4. [Variables and Constants](#14-variables-and-constants)
-5. OperatorsK
+5. Operators
 6. Strings
 7. Input and Output
 8. Control Flow
