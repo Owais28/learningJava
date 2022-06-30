@@ -223,7 +223,19 @@ In Java, you use the keyword `final` to denote a constant.
   then its value is set once and for all.
 - It is customary to name constants in all
   uppercase.
-- It is probably more common in Java to create a constant so it’s available to
+```java
+public class Constants { 
+    public static void main(String[] args) {
+      final double CM_PER_INCH = 2.54;
+      double paperWidth = 8.5;
+      double paperHeight = 11;
+      System.out.println("Paper size in centimeters: "
+            + paperWidth * CM_PER_INCH + " by " + paperHeight *
+            CM_PER_INCH);
+    }
+}
+```
+It is probably more common in Java to create a constant so it’s available to
   multiple methods inside a single class. These are usually called `class
   constants`.
 
@@ -239,11 +251,11 @@ public class Constants2 {
   CM_PER_INCH);
   }
 }
-```
+``` 
 > 💡 Note that the definition of the class constant appears outside the main method.
 Thus, the constant can also be used in other methods of the same class.
-Furthermore, if the constant is declared, as in this example, `public`, methods
-of other classes can also use it.
+Furthermore, if the constant is declared, as in this example, `public`, __methods
+of other classes can also use it.__
 
 ### 1.4.4 Enumerated Types
 Sometimes, a variable should only hold a restricted set of values. For
