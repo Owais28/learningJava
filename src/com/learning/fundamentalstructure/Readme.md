@@ -1,9 +1,9 @@
 # Chapter 1 - Fundamental Structure of Java  
-1. [A Simple Java Program](#11-a-simple-java-program)
-2. [Comments](#12-comments)
-3. [Data Types](#13-data-types)
-4. [Variables and Constants](#14-variables-and-constants)
-5. Operators
+1. [A Simple Java Program](#a-simple-java-program)
+2. [Comments](#Comments)
+3. [Data Types](#data-types)
+4. [Variables and Constants](#comments)
+5. [Operators](#operators)
 6. Strings
 7. Input and Output
 8. Control Flow
@@ -12,7 +12,7 @@
 
 ---
 
-## 1.1 A simple Java Program
+## A simple Java Program
 This is a very simple java program that prints a message to console. This program consist of a [class]() `SimpleJavaProgram`,
 a [variable]() `greetings` of type [String]() and a [method]() `main`.
 ```java
@@ -33,14 +33,14 @@ public class ClassName {
     }
 }
 ```
-## 1.2 Comments 
+## Comments 
 Comments in Java, as in most programming languages, do not show up in the
 executable program. Thus, you can add as many comments as needed without
 fear of bloating the code.
 
 Java has three ways of marking comments.
 
-### 1.2.1 Single Line Comment `//`.
+### Single Line Comment `//`.
 The most common form is a `//`. Use this for a comment that runs from the `//` to the end
 of the line.
 
@@ -48,7 +48,7 @@ of the line.
     System.out.println("We will not use 'Hello, World!'"); // is this too cute?
 ```
 
-### 1.2.2 Multiline Comment `/* */`
+### Multiline Comment `/* */`
 ```java
 /*
         This is multiline comment,
@@ -56,7 +56,7 @@ of the line.
  */
     System.out.println("We will not use 'Hello, World!'"); // is this too cute?
 ```
-### 1.2.3 Generating Documentation `/** */`
+### Generating Documentation `/** */`
 Finally, a third kind of comment is used to generate documentation
 automatically.
 
@@ -73,13 +73,13 @@ public class FirstSample {
 }
 ```
 
-## 1.3 Data Types 
+## Data Types 
 Java is a _strongly typed language_. This means that every variable must have
 a declared type. There are **eight** **[primitive types]()** in Java. Four of them are
 **[integer](#131-integer-types)** types; two are **[floating-point]()** number types; one is the **[character]()** type
 `char`, used for code units in the Unicode encoding scheme  and one is a [boolean]() type for truth values.
 
-### 1.3.1 `Integer` Types
+### Integer Types
 The `integer` types are for numbers without fractional parts. 
 - Negative values are allowed. 
 - Java provides the four `integer` types shown in the following table :
@@ -103,7 +103,7 @@ The `integer` types are for numbers without fractional parts.
 > ⚠️ Under Java, the ranges of the `integer` types do not depend on the machine on
 which you will be running the Java code.
 
-### 1.3.2 Floating-Point Types
+### Floating-Point Types
 The floating-point types denote numbers with fractional parts.
 - `float` - 4 bytes
 - `double` - 8 bytes
@@ -124,7 +124,7 @@ numerical computations without roundoff errors, use the BigDecimal class,
 which is introduced later in this chapter
 
 
-### 1.3.3 The `char` Type
+### The char Type
 The `char` type was originally intended to describe individual characters.
 However, this is no longer the case. Nowadays, some Unicode characters can
 be described with one `char` value, and other Unicode characters require two
@@ -137,17 +137,17 @@ Escape Sequences for Special Characters
 
 ![img.png](img.png)
 
-### 1.3.5 The boolean Type
+### The boolean Type
 The `boolean` type has two values, `false` and `true`. It is used for evaluating
 logical conditions. You cannot convert between `integers` and `boolean` values.
 
 
-## 1.4 Variables and Constants
+## Variables and Constants
 As in every programming language, variables are used to store values.
 Constants are variables whose values don’t change. In the following sections,
 you will learn how to declare variables and constants.
 
-### 1.4.1 Declaring Variables
+### Declaring Variables
 In Java, every variable has a type. You declare a variable by placing the type
 first, followed by the name of the variable. Here are some examples:
 ```java
@@ -186,7 +186,7 @@ int i, j; // both are integers
 _However, I don’t recommend this style. If you declare each variable
 separately, your programs are easier to read._
 
-### 1.4.2 Initializing Variables
+### Initializing Variables
 After you declare a variable, you must explicitly initialize it by means of an
 assignment statement—you can never use the value of an uninitialized
 variable.
@@ -217,7 +217,7 @@ var vacationDays = 12; // vacationDays is an int
 var greeting = "Hello"; // greeting is a String
 ```
 
-### 1.4.3 Constants
+### Constants
 In Java, you use the keyword `final` to denote a constant.
 - The keyword `final` indicates that you can assign to the variable once, and
   then its value is set once and for all.
@@ -280,4 +280,13 @@ declaration, or the special value `null` that indicates that the variable is not
 to any value at all.
 
 
-<button type="button" name="button" class=".btn .btn-purple">Edit This</button>
+## Operators
+### Arithmetic Operators
+The usual arithmetic operators `+`, `-`, `*`, `/` are used in Java for addition,
+subtraction, multiplication, and division. The `/` operator denotes integer
+division if both arguments are integers, and floating-point division otherwise.
+Integer remainder (sometimes called _modulus_) is denoted by `%`. For example,
+`15 / 2` is `7`, `15 % 2` is `1`, and `15.0 / 2` is `7.5`.
+
+> 📝 Note that _integer division by `0` raises an exception_ whereas _floating-point
+division by `0` yields_ an __infinite__ or `NaN` result.
