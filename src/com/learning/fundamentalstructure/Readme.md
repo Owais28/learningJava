@@ -4,7 +4,7 @@
 3. [Data Types](#data-types)
 4. [Variables and Constants](#comments)
 5. [Operators](#operators)
-6. Strings
+6. [Strings]()
 7. Input and Output
 8. Control Flow
 9. Big Numbers 
@@ -290,3 +290,98 @@ Integer remainder (sometimes called _modulus_) is denoted by `%`. For example,
 
 > 📝 Note that _integer division by `0` raises an exception_ whereas _floating-point
 division by `0` yields_ an __infinite__ or `NaN` result.
+
+### Mathematical Functions and Constants
+The `Math` class contains an assortment of mathematical functions that you may
+occasionally need, depending on the kind of programming that you do.
+
+#### Methods and Fields in `Math` Class
+1. Square root : `Math.sqrt()`
+2. Raising a quantity to a power - `Math.pow(x,a)`
+3. Trigonometric Functions 
+   1. `Math.sin` 
+   2. `Math.cos`
+   3. `Math.tan`
+   4. `Math.atan`
+   5. `Math.atan2`
+4. Exponential function - `Math.exp()`
+5. Natural Logarithm - `Math.log()`
+6. Decimal Logarithm - `Math.log10()`
+7. Mathematical constants - `Math.PI` π , `Math.E` e
+
+> The Math class provides several methods to make integer arithmetic safer.
+The mathematical operators quietly return wrong results when a computation
+overflows. For example, one billion times three (1000000000 * 3) evaluates
+to -1294967296 because the largest int value is just over two billion. If you
+call Math.multiplyExact(1000000000, 3) instead, an exception is generated.
+You can catch that exception or let the program terminate rather than quietly
+continue with a wrong result.
+
+
+💡 There are also methods `addExact`,
+`subtractExact`, `incrementExact`, `decrementExact`, `negateExact`, and
+`absExact`, all with `int` and `long` parameters.
+
+8. `Math.abs(double a)` : Returns the **absolute value** of a `double` value. 
+Available Methods :   `abs(int a)`, `abs(float a)`, `abs(long a)`.
+9. `Math.cbrt(double a)` : Returns the **cube root** of a `double` value.
+10. `Math.floor(double a)` : Returns the largest (closest to positive infinity) `double` value that is less than or equal 
+to the argument and is equal to a mathematical integer.
+11. `Math.max()` : Returns the greater of two given values.
+12. `Math.min()` : Returns the smaller of two double values.
+13. `Math.random()` : Returns a `double` value with a positive sign, greater than or equal to 0.0 and less than 1.0. 
+14. `Math.round(double a)` : Returns the closest `long` to the argument, with ties rounding to positive infinity.
+Available Methods : `Math.round(float a)` Returns the closest `int` to the argument, with ties rounding to positive infinity.
+
+... more 
+
+### Conversion between Numeric Types
+It is often necessary to convert from one numeric type to another.
+When two values are combined with a binary operator (such as n + f where n
+is an integer and f is a floating-point value), both operands are converted to a
+common type before the operation is carried out.
+
+- If either of the operands is of type double, the other one will be converted to
+  a double.
+- Otherwise, if either of the operands is of type float, the other one will be
+  converted to a float. 
+- Otherwise, if either of the operands is of type long, the other one will be
+  converted to a long.
+- Otherwise, both operands will be converted to an int.
+
+### Casts
+In the preceding section, you saw that int values are automatically converted
+to `double` values when necessary. On the other hand, there are obviously times
+when you want to consider a `double` as an `integer`. Numeric conversions are
+possible in Java, but of course information may be lost. Conversions in which
+loss of information is possible are done by means of casts. The syntax for
+casting is to give the target type in parentheses, followed by the variable
+name. For example: 
+
+```java
+    double x = 9.997;
+    int nx = (int) x;
+    // Now, the variable nx has the value 9 because casting a floating-point value to
+    // an integer discards the fractional part.
+```
+If you want to round a floating-point number to the nearest integer (which in
+most cases is a more useful operation), use the `Math.round` method:
+```java
+    double x = 9.997;
+    int nx = (int) Math.round(x);
+```
+Now the variable `nx` has the value 10. You still need to use the cast `(int)`
+when you call round. The reason is that the return value of the round method is
+a `long`, and a `long` can only be assigned to an `int` with an `explicit` cast
+because there is the possibility of information loss.
+
+### Assignments 
+Note that in Java, an assignment is an expression. That is, it has a value—
+namely, the value that is being assigned. You can use that value—for example,
+to assign it to another variable. Consider these statements:
+```java
+  int x = 1;
+  int y = x += 4;
+```
+The value of `x += 4` is `5`, since that’s the value that is being assigned to `x`.
+Next, that value is assigned to `y`.
